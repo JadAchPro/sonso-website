@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonso — Réserver</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav__logo">Sonso</a>
+    <nav>
+      <ul class="nav__links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="pratiques.html">Nos Pratiques</a></li>
+        <li><a href="a-propos.html">À Propos</a></li>
+        <li><a href="contact.html" class="active">Réserver</a></li>
+      </ul>
+    </nav>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <div class="nav__overlay" id="navOverlay">
+    <a href="index.html" class="overlay-link">Accueil</a>
+    <a href="pratiques.html" class="overlay-link">Nos Pratiques</a>
+    <a href="a-propos.html" class="overlay-link">À Propos</a>
+    <a href="contact.html" class="overlay-link active">Réserver</a>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero__bg" style="background-image: url('frankie-mish-vQvBad9sBjs-unsplash.jpg')"></div>
+      <div class="page-hero__overlay"></div>
+      <div class="page-hero__content">
+        <h1 class="page-hero__title">Réserver</h1>
+        <p class="page-hero__subtitle">Chaque séance est un rendez-vous avec vous-même</p>
+      </div>
+    </section>
+
+    <!-- RESERVATION FORM -->
+    <section class="contact-section">
+      <span class="section-label reveal">Prendre rendez-vous</span>
+      <h2 class="contact-section__title reveal">Réservation</h2>
+      <p class="contact-section__subtitle reveal">
+        Remplissez le formulaire ci-dessous et nous reviendrons vers vous dans les 24 heures pour confirmer votre créneau.
+      </p>
+
+      <form class="contact-form reveal" onsubmit="return false;">
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Téléphone</label>
+          <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone">
+        </div>
+
+        <div class="form-group">
+          <label for="practice">Pratique souhaitée</label>
+          <select id="practice" name="practice" required>
+            <option value="" disabled selected>Choisir une pratique</option>
+            <option value="souffle">Souffle Guidé — 75€</option>
+            <option value="meditation">Méditation — 45€</option>
+            <option value="yoga">Yoga — 35€</option>
+            <option value="bain-sonore">Bain Sonore — 65€</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Précisez vos disponibilités ou toute information utile (facultatif)"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--accent">Envoyer ma demande</button>
+      </form>
+    </section>
+
+    <!-- CONTACT INFO -->
+    <section class="contact-info">
+      <hr class="sep" style="margin-bottom: 60px;">
+      <div class="contact-info__grid">
+
+        <div class="contact-info__block reveal">
+          <span class="contact-info__label">Adresse</span>
+          <p class="contact-info__value">
+            12 rue du Silence<br>
+            75003 Paris
+          </p>
+        </div>
+
+        <div class="contact-info__block reveal">
+          <span class="contact-info__label">Contact</span>
+          <p class="contact-info__value">
+            <a href="mailto:contact@sonso.fr">contact@sonso.fr</a><br>
+            <a href="tel:+33144000000">+33 1 44 00 00 00</a>
+          </p>
+        </div>
+
+        <div class="contact-info__block reveal">
+          <span class="contact-info__label">Horaires</span>
+          <p class="contact-info__value">
+            Lundi — Vendredi : 9h — 20h<br>
+            Samedi : 10h — 18h<br>
+            Dimanche : Fermé
+          </p>
+        </div>
+
+        <div class="contact-info__block reveal">
+          <span class="contact-info__label">Suivez-nous</span>
+          <p class="contact-info__value">
+            <a href="#" target="_blank" rel="noopener">Instagram</a><br>
+            <a href="#" target="_blank" rel="noopener">WhatsApp</a>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">Sonso</div>
+      <div class="footer__info">
+        <span>12 rue du Silence, 75003 Paris</span>
+        <a href="mailto:contact@sonso.fr">contact@sonso.fr</a>
+        <a href="tel:+33144000000">+33 1 44 00 00 00</a>
+      </div>
+      <div class="footer__social">
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <p class="footer__copy">&copy; 2026 Sonso. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navOverlay = document.getElementById('navOverlay');
+    const overlayLinks = document.querySelectorAll('.overlay-link');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navOverlay.classList.toggle('open');
+      document.body.style.overflow = navOverlay.classList.contains('open') ? 'hidden' : '';
+    });
+
+    overlayLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navOverlay.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 80);
+    }, { passive: true });
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonso — À Propos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav__logo">Sonso</a>
+    <nav>
+      <ul class="nav__links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="pratiques.html">Nos Pratiques</a></li>
+        <li><a href="a-propos.html" class="active">À Propos</a></li>
+        <li><a href="contact.html">Réserver</a></li>
+      </ul>
+    </nav>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <div class="nav__overlay" id="navOverlay">
+    <a href="index.html" class="overlay-link">Accueil</a>
+    <a href="pratiques.html" class="overlay-link">Nos Pratiques</a>
+    <a href="a-propos.html" class="overlay-link active">À Propos</a>
+    <a href="contact.html" class="overlay-link">Réserver</a>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero__bg" style="background-image: url('liana-s-wrmp8vQTuY0-unsplash.jpg')"></div>
+      <div class="page-hero__overlay"></div>
+      <div class="page-hero__content">
+        <h1 class="page-hero__title">À Propos</h1>
+        <p class="page-hero__subtitle">Ce qui nous anime</p>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="philosophy">
+      <span class="section-label reveal">Notre vision</span>
+      <blockquote class="philosophy__quote reveal">
+        «&nbsp;Le silence n'est pas une absence. C'est un espace où tout commence.&nbsp;»
+      </blockquote>
+      <hr class="sep reveal">
+      <p class="philosophy__text reveal">
+        Sonso est né d'une conviction&nbsp;: le bien-être n'est pas un luxe, c'est un retour. Un retour à la sensation, au souffle, à l'essentiel. Dans un monde saturé de bruit et de vitesse, nous avons voulu créer un lieu à contre-courant — un espace où le temps ralentit, où le corps retrouve sa voix, où l'on réapprend à simplement être.
+      </p>
+      <p class="philosophy__text reveal">
+        Notre approche mêle pratiques ancestrales et sensibilité contemporaine. Nous croyons que la pleine présence n'est pas un idéal lointain, mais une qualité accessible à chacun — à condition de lui ménager un espace.
+      </p>
+    </section>
+
+    <!-- VALUES -->
+    <section class="values">
+      <div class="values__grid">
+        <div class="value reveal">
+          <h3 class="value__name">Présence</h3>
+          <p class="value__desc">Chaque séance est une invitation à habiter pleinement l'instant. Pas de performance, pas d'objectif — juste l'attention portée à ce qui est.</p>
+        </div>
+        <div class="value reveal">
+          <h3 class="value__name">Lenteur</h3>
+          <p class="value__desc">Nous cultivons un tempo qui permet au corps et à l'esprit de se synchroniser. Ici, ralentir n'est pas un renoncement — c'est un acte de lucidité.</p>
+        </div>
+        <div class="value reveal">
+          <h3 class="value__name">Sensation</h3>
+          <p class="value__desc">Le corps est notre premier instrument de connaissance. Nos pratiques passent par l'expérience directe — le souffle, le son, le mouvement.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER -->
+    <section class="founder">
+      <div class="founder__inner">
+        <div class="founder__image-wrap reveal">
+          <img src="frankie-mish-KqjRmA9YshE-unsplash.jpg" alt="Fondatrice" class="founder__image">
+        </div>
+        <div class="founder__content reveal">
+          <span class="section-label">La fondatrice</span>
+          <h2 class="founder__name">Amina Soleil</h2>
+          <p class="founder__role">Praticienne en breathwork, méditation &amp; yoga</p>
+          <p class="founder__bio">
+            Formée entre l'Orient et l'Occident, Amina a passé dix ans à explorer les traditions contemplatives — du yoga shivaïte en Inde aux pratiques de pleine conscience en Europe, en passant par les techniques de respiration holotropique.
+          </p>
+          <p class="founder__bio" style="margin-top: 16px;">
+            Sonso est l'aboutissement de ce parcours&nbsp;: un espace où chaque pratique est transmise avec rigueur et douceur, dans le respect du rythme de chacun. Sa conviction&nbsp;: le bien-être le plus profond naît de la simplicité.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="home-cta">
+      <h2 class="home-cta__title reveal">Vous êtes les bienvenus</h2>
+      <p class="home-cta__text reveal">Quelle que soit votre expérience, Sonso est un espace ouvert à tous.</p>
+      <div class="reveal">
+        <a href="contact.html" class="btn btn--accent">Réserver une séance</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">Sonso</div>
+      <div class="footer__info">
+        <span>12 rue du Silence, 75003 Paris</span>
+        <a href="mailto:contact@sonso.fr">contact@sonso.fr</a>
+        <a href="tel:+33144000000">+33 1 44 00 00 00</a>
+      </div>
+      <div class="footer__social">
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <p class="footer__copy">&copy; 2026 Sonso. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navOverlay = document.getElementById('navOverlay');
+    const overlayLinks = document.querySelectorAll('.overlay-link');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navOverlay.classList.toggle('open');
+      document.body.style.overflow = navOverlay.classList.contains('open') ? 'hidden' : '';
+    });
+
+    overlayLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navOverlay.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 80);
+    }, { passive: true });
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  </script>
+
+</body>
+</html>
