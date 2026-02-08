@@ -1092,25 +1092,21 @@ h1, h2, h3, h4 {
   .services-preview__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0 60px;
+    gap: 0;
   }
 
   .service-item {
-    padding: 40px 0;
+    padding: 40px 32px;
+    border-bottom: 1px solid rgba(196, 101, 58, 0.15);
+  }
+
+  .service-item:nth-child(odd) {
+    border-right: 1px solid rgba(196, 101, 58, 0.15);
   }
 
   .service-item:nth-child(3),
   .service-item:nth-child(4) {
     border-bottom: none;
-  }
-
-  .service-item:nth-child(odd) {
-    padding-right: 30px;
-    border-right: 1px solid rgba(196, 101, 58, 0.15);
-  }
-
-  .service-item:nth-child(even) {
-    padding-left: 30px;
   }
 
   /* Services full page */
